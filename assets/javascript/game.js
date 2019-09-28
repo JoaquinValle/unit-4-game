@@ -4,12 +4,11 @@ $(document).ready(function() {
 var randomNumber = Math.floor(Math.random()*60)+ 60
 $("#random-number").text(randomNumber)
 
-var redGemNumber = Math.floor(Math.random() * 15) + 1
-var blueGemNumber = Math.floor(Math.random() * 6) + 6
-var yellowGemNumber = Math.floor(Math.random() * 7) + 13
-var greenGemNumber = Math.floor(Math.random() * 9) + 4
-console.log("Red Gem: " + redGemNumber + ". Blue Gem: " + blueGemNumber + 
-            ". Yellow Gem: " + yellowGemNumber + ". Green Gem: " + greenGemNumber + ".")
+var redGemNumber = 0
+var blueGemNumber = 0
+var yellowGemNumber = 0
+var greenGemNumber = 0
+
 
 var counter = 0
 var wins = 0
@@ -20,7 +19,8 @@ $("#wins").text(wins)
 $("#losses").text(losses)
 
 function gemClick(gemNumber, gemColor) {
-    $("#"+gemColor+"Gem").on("click", function() {
+    
+    $("#"+gemColor+"Gem").off( "click").on("click", function() {
     counter = counter + gemNumber
     $("#counter").text(counter)
     console.log("Total: " + counter)
@@ -50,12 +50,14 @@ function reset() {
     $("#counter").text(counter)
     randomNumber = Math.floor(Math.random()*60)+ 60
     $("#random-number").text(randomNumber)
+
+    gemClick(redGemNumber,"red")
+    gemClick(blueGemNumber, "blue")
+    gemClick(yellowGemNumber, "yellow")
+    gemClick(greenGemNumber, "green")
 }
 
-gemClick(redGemNumber,"red")
-gemClick(blueGemNumber, "blue")
-gemClick(yellowGemNumber, "yellow")
-gemClick(greenGemNumber, "green")
+reset()
 
 })
 
