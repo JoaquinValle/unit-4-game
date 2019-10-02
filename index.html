@@ -14,62 +14,60 @@
 <div id="container">
     <div class="row">
         <div class="col-12">
-            <h1>Crystals Collector</h1>
+            <h1 id="crystal-collector">Crystals Collector</h1>
         </div>
     </div>
     <div class="row">
-        <div class="col-12">
+        <div class="col 1"></div>
+        <div class="col-8 pt-3 pb-3 pl-3 pr-3 border rounded">
             <p>You will be given a random number at the start of the game.</p>
             <p>There are four crystal colors below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
-            <p>You win the game by matching yout total score to the random number You lose the gmae if your total score goes over the number.</p>
+            <p>You win the game by matching yout total score to the random number You lose the game if your total score goes over the number.</p>
             <p>The value of each crystal is hidden from you until you click on it.</p>
             <p>Each time when the game starts the game will change the values of each crystal.</p>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <h1 id="random-number"></h1>
+        <div class="col-3 ml-2 text-center mt-5 mr-2">
+            <div class="row">
+                <div class="col-12 mt"></div>
+            </div>
+            <div class="row  mb-3">
+                    <div class="col-6">
+                        <h4>Wins: <span id="wins"></span> </h4>
+                    </div>
+                    <div class="col-6">
+                        <h4>Losses: <span id="losses"></span> </h4>
+                    </div>
+            </div>
+            <div class="row  mb-3">
+                <div class="col-12">
+                    <h1 id="random-number"></h1>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h4>Your total score is : <span id="counter"></span></h4>
+                </div>
+            </div>
         </div>
-        <div class="col-4">
-            <h4>Wins: <div id="wins"></div> </h4>
-            <h4>Losses: <div id="losses"></div> </h4>
-        </div>
-        <div class="col-4"></div>
     </div>
-    <div class="row">
-        <div class="col-1">
+    
+    <div class="row mt-5">
+        <div class="col-2"></div>
+        <div class="col-2">
             <img src="assets/images/red_gem.png" alt="Red Gem" id="redGem">
         </div>
-        <div class="col-1">
+        <div class="col-2">
             <img src="assets/images/blue_gem.png" alt="Blue Gem" id="blueGem">
         </div>
-        <div class="col-1">
+        <div class="col-2">
             <img src="assets/images/yellow_gem.png" alt="Yellow Gem" id="yellowGem">
         </div>
-        <div class="col-1">
+        <div class="col-2">
             <img src="assets/images/green_gem.png" alt="Green Gem" id="greenGem">
         </div>
-        <div class="col-8"></div>
+        <div class="col-2"></div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <h4>Your total score is : </h4>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <h4 id="counter"></h4>
-        </div>
-    </div>
-
-
-
-
 </div>
-
-
-
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/javascript/game.js"></script>

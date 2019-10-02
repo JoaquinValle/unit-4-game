@@ -1,4 +1,24 @@
 img {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
+}
+
+body {
+    background-image: url("../images/Background.png")
+}
+
+#crystal-collector {
+    padding: 15px;
+    text-align: center;
+    background-color: aquamarine;
+    color: darkcyan
+}
+
+p {
+    color: darkgreen;
+}
+
+.number {
+    margin-left: 70px;
+    margin-top: 30px;
 }
